@@ -22,3 +22,16 @@ console.log (convert({a: 1, b: 2, c: 3})); */
 	  let count2 = .length;
 	  return "words:" + count + " " + "numbers:" + count2;
 }
+
+console.log (wordcount("The year is 1998")) */
+
+// function to count number of words and number of numbers in a string
+
+function particlecount (str){
+	let arr = str.split (" ");
+	let count = arr.length;
+	let count2 = number.isNaN;
+	return "words:" + count + " " + "numbers:" + count2;
+}
+
+console.log (particlecount("The year is 1998"));
