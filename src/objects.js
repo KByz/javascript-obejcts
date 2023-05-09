@@ -16,12 +16,9 @@ console.log(total({height: 5, width: 2, depth: 3})); */
 console.log (convert({a: 1, b: 2, c: 3})); */
 
 //function to return count of letters and words in a given string
-function wordcount (str) {
+/* function wordcount (str) {
 	  let arr = str.split (" ");
 	  let count = arr.length;
 	  let count2 = .length;
 	  return "words:" + count + " " + "numbers:" + count2;
 }
-
-console.log (wordcount("The year is 1998"))
-
