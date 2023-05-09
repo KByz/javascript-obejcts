@@ -18,21 +18,27 @@
 // Step 5) if it is a letter, add to the letter count
 // Step 6) return an object with the number and letter count
 
-function NumbersAndLetters(str) {
-let arr = str.split("")
-let letterCount = 0
-    let numberCount = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (isNaN(arr[i])) {
-            letterCount++
+function numbersAndLetters(str) {
+    let letters = [];
+    let numbers = [];
+
+    const filterStr = str.split('').filter(item => item != ' ')
+    console.log(filterStr)
+
+    for (let i = 0; i < filterStr.length; i++) {
+        if (isNaN(filterStr[i])) {
+            letters.push(filterStr[i])
         } else {
-            numberCount++
+            numbers.push(filterStr[i])
+        
         }
     }
-    return {
-        letters: letterCount,
-        numbers: numberCount
+    let finalCount = {
+        letters: letters.length,
+        numbers: numbers.length,
+    
     }
-}
-console.log(NumbersAndLetters("Hello World 2023"))
 
+    return finalCount }
+
+    console.log(numbersAndLetters("Hello World 2023"))
